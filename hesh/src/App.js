@@ -7,6 +7,7 @@ class App extends Component {
     super(props);
 
     this.addPost = this.addPost.bind(this);
+    this.handlePostEditorAddChange = this.handlePostEditorAddChange.bind(this);
 
     this.state = {
       posts: [],
@@ -19,7 +20,14 @@ class App extends Component {
    newState.posts.push(this.state.newPostBody);
    newState.newPostBody = '';
    this.setState(newState);
-    }
+  }
+
+  handlePostEditorAddChange(ev) {
+    this.setState ({
+      newPostBody: ev.target.value
+    })
+  }
+
   
   render() {
     return (
@@ -33,8 +41,8 @@ class App extends Component {
         }
           <div className="panel panel-default post-editor-input">
             <div className="panel-body">
-              <textarea className="form-control" />
-              <button className="btn btn-success post-editor-button">Post</button>
+              <textarea className="form-control post-editor-add" onChange={this.handlePostEditorAddChange} />
+              <button className="btn btn-success post-editor-button" onClick={this.addPost}>Post</button>
             </div>
            </div>
       </div>
