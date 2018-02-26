@@ -3,15 +3,34 @@ import Post from './Post/component/Post';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.addPost = this.addPost.bind(this);
+
+    this.state = {
+      posts: [],
+      newPostBody: '',
+    }
+  }
+
+  addPost() {
+   const newState = Object.assign({}, this.state);
+   newState.posts.push(this.state.newPostBody);
+   newState.newPostBody = '';
+   this.setState(newState);
+    }
+  
   render() {
     return (
       <div>
-        <div className="jumbotron">
-          <h1>Hello, world!</h1>
-            <p>...</p>
-          <p><a className="btn btn-primary btn-lg" href="getbootstrap.com" role="button">Learn more</a></p>
-        </div>
-        <Post />
+        {
+          this.state.posts.map((postBody, idx) => {
+            return (
+             <Post key={idx} postBody={postBody} />
+            )
+          })
+        }
           <div className="panel panel-default post-editor-input">
             <div className="panel-body">
               <textarea className="form-control" />
