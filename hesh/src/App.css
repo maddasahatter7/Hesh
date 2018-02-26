@@ -1,6 +1,21 @@
-.post-editor {
-  margin: 1em 20%;
+.jumbotron {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+
+.panel-post {
+  margin: 1em 15%;
+}
+
+.post-editor-input {
+  margin: 1em 15%;
   border-color: brown;
+}
+
+.post-editor-button {
+  float: right;
+  margin-top: 1em;
 }
 
 @media(max-width: 900px)  {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Post from './Post/component/Post';
 import './App.css';
 
 class App extends Component {
@@ -7,20 +8,20 @@ class App extends Component {
       <div>
         <div className="jumbotron">
           <h1>Hello, world!</h1>
-             <p>...</p>
-               <p><a className="btn btn-primary btn-lg" href="getbootstrap.com" role="button">Learn more</a></p>
+            <p>...</p>
+          <p><a className="btn btn-primary btn-lg" href="getbootstrap.com" role="button">Learn more</a></p>
         </div>
-     
-        <div className="panel panel-default post-editor">
-          <div className="panel-body">
-            <textarea />
-            <button className="btn btn-success">Post</button>
-          </div>
-        </div>
+        <Post />
+          <div className="panel panel-default post-editor-input">
+            <div className="panel-body">
+              <textarea className="form-control" />
+              <button className="btn btn-success post-editor-button">Post</button>
+            </div>
+           </div>
       </div>
 
 
-          
+
     );
   }
 }
