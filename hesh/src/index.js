@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import 'jquery';
 import registerServiceWorker from './registerServiceWorker';
-import Appbar from 'muicss/lib/react/appbar';
-import Button from 'muicss/lib/react/button';
-import Container from 'muicss/lib/react/container';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-require ('bootstrap');
-// the next part is so that bootstrap can find jquery by attaching jquery to global object
-global.jQuery = require ('jquery');
+// require ('bootstrap');
+// // the next part is so that bootstrap can find jquery by attaching jquery to global object
+// global.jQuery = require ('jquery');
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
