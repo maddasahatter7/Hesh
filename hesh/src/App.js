@@ -10,7 +10,14 @@ class App extends Component {
              <p>...</p>
                <p><a className="btn btn-primary btn-lg" href="getbootstrap.com" role="button">Learn more</a></p>
         </div>
+     
+        <div className="panel panel-primary">
+          <div className="panel-heading">Horaire de Train Actuel</div>
+        </div>
       </div>
+
+
+          
     );
   }
 }
