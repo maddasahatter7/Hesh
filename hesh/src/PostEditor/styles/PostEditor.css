@@ -1,0 +1,9 @@
+.post-editor-input {
+    margin: 1em 15%;
+    border-color: brown;
+  }
+  
+  .post-editor-button {
+    float: right;
+    margin-top: 1em;
+  }

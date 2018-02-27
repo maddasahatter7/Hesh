@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-
+import '../styles/PostEditor.css';
 class PostEditor extends Component {
     constructor(props) {
        super(props);
 
-        this.state= {
+        this.state = {
             newPostBody: '',
         };
+        
         this.handlePostEditorAddChange = this.handlePostEditorAddChange.bind(this);
         this.createPost = this.createPost.bind(this);
     }
@@ -14,7 +15,7 @@ class PostEditor extends Component {
     handlePostEditorAddChange(ev) {
         this.setState({
             newPostBody: ev.target.value
-        })
+        });
     }
 
     createPost() {

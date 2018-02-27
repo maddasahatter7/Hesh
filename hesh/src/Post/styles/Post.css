@@ -1,0 +1,10 @@
+.panel-post {
+    margin: 1em 15%;
+  }
+  
+  @media(max-width: 900px)  {
+    .post-editor {
+      margin: 1em;
+    }
+  }
+  

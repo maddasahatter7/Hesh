@@ -2,7 +2,22 @@ import React, { Component } from 'react';
 import Post from '../../Post/components/Post';
 import PostEditor from '../../PostEditor/components/PostEditor';
 
-class ThreadDisplay extends components {
+class ThreadDisplay extends Component {
+    constructor(props) {
+        super(props);
+
+        this.addPost = this.addPost.bind(this);
+
+        this.state = {
+            posts: [],
+        }
+    }
+
+    addPost(newPostBody) {
+        const newState = Object.assign({}, this.state);
+        newState.posts.push(newPostBody);
+        this.setState(newState);
+    }
     render() {
         return (
             <div>
@@ -18,3 +33,5 @@ class ThreadDisplay extends components {
         );
     }
 }
+
+export default ThreadDisplay;
