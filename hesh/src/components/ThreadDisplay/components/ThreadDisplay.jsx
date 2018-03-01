@@ -9,7 +9,10 @@ class ThreadDisplay extends Component {
         this.addPost = this.addPost.bind(this);
 
         this.state = {
-            posts: [],
+            posts: [
+                
+            ],
+           
         }
     }
 

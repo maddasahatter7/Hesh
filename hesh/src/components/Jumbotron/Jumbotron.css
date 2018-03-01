@@ -1,0 +1,32 @@
+body {
+
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 150%;
+    background: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.jumbotron {
+    padding: 4em;
+    color: #006666;
+    text-shadow: 8px 8px 10px black;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+    background: url(./hi.jpg) center;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0em;
+    border-color: -moz-linear-gradient(top, #555555, #111111);
+    
+    
+}
+.btnOne {
+    color: teal;
+    background: black;
+}
+
