@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import '../styles/PostEditor.css';
 class PostEditor extends Component {
     constructor(props) {
-       super(props);
+        super(props);
 
         this.state = {
             newPostBody: '',
         };
-        
+
         this.handlePostEditorAddChange = this.handlePostEditorAddChange.bind(this);
         this.createPost = this.createPost.bind(this);
     }

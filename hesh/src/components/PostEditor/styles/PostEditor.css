@@ -1,6 +1,7 @@
 .post-editor-input {
     margin: 1em 15%;
-    border-color: brown;
+    border-color: black;
+    background: rgba(190, 75, 75, 0.2);
   }
   
   .post-editor-button {
